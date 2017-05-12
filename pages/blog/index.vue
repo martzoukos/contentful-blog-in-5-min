@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Navigation></Navigation>
     <ul>
       <li v-for="post in posts">
         <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">{{ post.fields.title }}</nuxt-link>
@@ -10,6 +11,7 @@
 
 <script>
 import {client} from '../../plugins/contentful-client.js'
+import Navigation from '~components/navigation.vue'
 
 export default {
   asyncData ({ params }) {
@@ -21,7 +23,9 @@ export default {
       }
     })
   },
-  components: {}
+  components: {
+    Navigation
+  }
 }
 </script>
 

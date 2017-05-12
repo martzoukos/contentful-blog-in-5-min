@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Navigation></Navigation>
     <nuxt-link :to="{ name: 'blog' }">Blog</nuxt-link>
     {{ post.fields.title }}
   </div>
@@ -7,6 +8,7 @@
 
 <script>
 import {client} from '../../plugins/contentful-client.js'
+import Navigation from '~components/navigation.vue'
 
 export default {
   asyncData ({ params }) {
@@ -20,7 +22,9 @@ export default {
     })
     .catch(console.error)
   },
-  components: {}
+  components: {
+    Navigation
+  }
 }
 </script>
 

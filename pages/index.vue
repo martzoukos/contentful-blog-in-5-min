@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Navigation></Navigation>
     <h1 class="title">
       {{ person.fields.name }}
     </h1>
@@ -22,6 +23,7 @@
 
 <script>
 import {client} from '../plugins/contentful-client.js'
+import Navigation from '~components/navigation.vue'
 
 export default {
   asyncData ({ params }) {
@@ -33,7 +35,9 @@ export default {
       }
     })
   },
-  components: {}
+  components: {
+    Navigation
+  }
 }
 </script>
 
