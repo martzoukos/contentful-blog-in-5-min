@@ -1,5 +1,5 @@
-const ctfConfig = require('./.contentful')
-const client = require('./plugins/contentful-client')
+const ctfConfig = require('./plugins/contentful-client').config
+const client = require('./plugins/contentful-client').client
 
 const config = {
   /*

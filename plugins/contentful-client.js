@@ -28,4 +28,7 @@ const client = contentful.createClient({
   accessToken: ctfConfig.CTF_ACCESS_TOKEN
 })
 
-module.exports = client
+module.exports = {
+  client,
+  config: ctfConfig
+}

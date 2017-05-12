@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import client from '../../plugins/contentful-client.js'
+import {client} from '../../plugins/contentful-client.js'
 
 export default {
   asyncData ({ params }) {
