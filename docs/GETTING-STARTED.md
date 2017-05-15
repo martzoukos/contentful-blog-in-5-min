@@ -10,9 +10,23 @@ $ git clone git@github.com:stefanjudis/contentful-blog-in-5-min.git
 $ npm install
 ```
 
-## Create a new space and import the needed content model
+## Get needed config data from Contentful
 
-To import the data needed to get you started you have to retrieve a Content Management API Access token. Then you can run `npm run import-data` with additional environment variables to fill your space with provided data.
+To set up and use a new space you have to perform the following steps.
+
+### Create a new space
+
+### Create a Content Management API token
+
+### Create a Content Delivery API token
+
+## Import data in your newly created space
+
+To import the content model and data you can use a tool from the Contentful ecosystem - [contentful-import](https://www.npmjs.com/package/contentful-import). This tool allows you to set up a new space with before exported data. It requires at least a Content Management API token and the id of the space that should be filled with data.
+
+To make it not necessary to install contentful-import globally it's defined as a development dependency which means that you can use it via an npm scripts command. Run `npm run import-data` with the additional parameters.
+
+*Side note: `--` is needed hand npm scripts arguments over to the actual command*
 
 ```bash
 $ npm run import-data -- --space-id YOUR_SPACE_ID --management-token YOUR_MANAGEMENT_TOKEN
@@ -20,17 +34,16 @@ $ npm run import-data -- --space-id YOUR_SPACE_ID --management-token YOUR_MANAGE
 
 ## Create a config file
 
-To make this project run locally you have to create a `.contentful.js` in the root of the directory. You can find a `.contentful.sample` file which shows you what you have to define.
+Now that you have the Contentful setup done it's time set the configuration to run the project. To make this project run locally you have to create a `.contentful.js` in the root of the directory. You can find a `.contentful.sample` file which shows you what you have to define.
 
 Needed config data:
-
 - the ID of the space where your data lives
 - the CDA access token so that you can fetch the data
 
 ```javascript
 module.exports = {
-  CTF_PERSON_ID: 'person',
-  CTF_BLOG_POST_TYPE_ID: 'blogPost',
+  CTF_PERSON_ID: 'person',            // no need to be changed - was set in your import
+  CTF_BLOG_POST_TYPE_ID: 'blogPost',  // no need to be changed - was set in your import
   CTF_SPACE_ID: 'YOUR_SPACE_ID',
   CTF_ACCESS_TOKEN: 'YOUR_DELIVERY_ACCESS_TOKEN'
 };
