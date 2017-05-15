@@ -1,11 +1,25 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <ul>
-      <li v-for="post in posts">
-        <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">{{ post.fields.title }}</nuxt-link>
-      </li>
-    </ul>
+    <div class="row column">
+      <h1>Blog</h1>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns" v-for="post in posts">
+        <time>3/6/2015</time>
+        <img class="thumbnail"
+          :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
+          :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=196 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=562 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1125 2000w`"
+        >
+        <h4><nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">{{ post.fields.title }}</nuxt-link></h4>
+        <p>{{ post.fields.description }}</p>
+
+        <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}" :aria-label="post.fields.title">Read more</nuxt-link>
+      </div>
+
+      <hr>
+    </div>
   </div>
 </template>
 

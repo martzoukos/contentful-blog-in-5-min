@@ -6,7 +6,8 @@
   "private": true,
   "dependencies": {
     "contentful": "^4.3.0",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "vue-markdown": "^2.1.3"
   },
   "scripts": {
     "dev": "nuxt",
