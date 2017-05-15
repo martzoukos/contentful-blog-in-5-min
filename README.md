@@ -12,7 +12,7 @@ This projects can be used as a base to get you started with Contentful. It inclu
 
 ## Getting started
 
-To really get you started from end to end please check out [the getting started guide](./docs/GETTINGS-STARDED.md).
+To really get you started from end to end please check out [the getting started guide](./docs/GETTING-STARDED.md).
 
 ## Build Setup
 
