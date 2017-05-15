@@ -9,8 +9,12 @@ try {
     !process.env.CTF_SPACE_ID ||
     !process.env.CTF_ACCESS_TOKEN
   ) {
-    // TODO link to this the GitHub repo
-    throw new Error('Please provide needed Contentful configs')
+    throw new Error(
+      'Please provide needed Contentful configs:\n' +
+      'There are two way to do so:\n' +
+      '- define a .contentful.js file (similar to .contentful.sample) in the root of this directory\n' +
+      '- define environment variables CTF_PERSON_ID, CTF_BLOG_POST_TYPE_ID, CTF_SPACE_ID, CTF_ACCESS_TOKEN'
+    )
   }
 
   ctfConfig = {

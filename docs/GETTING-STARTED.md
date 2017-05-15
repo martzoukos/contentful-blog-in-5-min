@@ -2,10 +2,12 @@
 
 To get you started you have to be registered at [Contentful](https://www.contentful.com).
 
-## Clone the repo
+## Clone the repo and install dependencies
 
 ```bash
 $ git clone git@github.com:stefanjudis/contentful-blog-in-5-min.git
+
+$ npm install
 ```
 
 ## Create a new space and import the needed content model
@@ -22,15 +24,13 @@ To make this project run locally you have to create a `.contentful.js` in the ro
 
 Needed config data:
 
-- the ID of the `person` content type
-- the ID of the `blogPost` content type
 - the ID of the space where your data lives
 - the CDA access token so that you can fetch the data
 
 ```javascript
 module.exports = {
-  CTF_PERSON_ID: 'PERSON_ID',
-  CTF_BLOG_POST_TYPE_ID: 'BLOG_POST_TYPE_ID',
+  CTF_PERSON_ID: 'person',
+  CTF_BLOG_POST_TYPE_ID: 'blogPost',
   CTF_SPACE_ID: 'YOUR_SPACE_ID',
   CTF_ACCESS_TOKEN: 'YOUR_DELIVERY_ACCESS_TOKEN'
 };
