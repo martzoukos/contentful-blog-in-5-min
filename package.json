@@ -17,7 +17,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "deploy": "nuxt generate && netlify deploy",
-    "import-data": "contentful-import --content-file ./data/export.json"
+    "import-data": "contentful-import --content-file ./data/contentful-export.json"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
