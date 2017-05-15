@@ -1,6 +1,18 @@
 # cf-contentful-blog-in-5-min
 
-> A static blog based on Contentful
+> A static blog or (dynamic blog) based on Contentful
+
+TODO screenshot.
+
+This projects can be used as a base to get you started with Contentful. It includes the following features:
+
+- static site generation
+- dynamic server side rendering
+- deploy to [netlify](https://www.netlify.com/)
+
+## Getting started
+
+To really get you started from end to end please check out [the getting started guide](./docs/GETTINGS-STARDED.md).
 
 ## Build Setup
 
