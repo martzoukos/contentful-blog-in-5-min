@@ -42,8 +42,8 @@ Needed config data:
 
 ```javascript
 module.exports = {
-  CTF_PERSON_ID: 'person',            // no need to be changed - was set in your import
-  CTF_BLOG_POST_TYPE_ID: 'blogPost',  // no need to be changed - was set in your import
+  CTF_PERSON_ID: '15jwOBqpxqSAOy2eOO4S0m', // no need to be changed - was set in your import
+  CTF_BLOG_POST_TYPE_ID: 'blogPost',       // no need to be changed - was set in your import
   CTF_SPACE_ID: 'YOUR_SPACE_ID',
   CTF_ACCESS_TOKEN: 'YOUR_DELIVERY_ACCESS_TOKEN'
 };

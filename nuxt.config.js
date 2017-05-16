@@ -14,7 +14,7 @@ const config = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css' }
+      { rel: 'stylesheet', href: 'https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css' }
     ]
   },
   /*
