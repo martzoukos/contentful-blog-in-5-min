@@ -20,19 +20,13 @@ To really get you started from end to end please check out [the getting started 
 
 This project is based on [nuxt.js](https://nuxtjs.org/).
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+### Why nuxt.js
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+nuxt.js is based on [Vue.js](https://vuejs.org/). Vue is a fairly new JS framework that provides excellent documentation and is a pleasure to work with. nuxt.js sits on top of Vue and was choosen because of two main feature:
 
-# build for production and launch server
-$ npm run build
-$ npm start
+- dynamic rendering on the server running in Node.js
+- static file generation
 
-# generate static project
-$ npm run generate
-```
+These two features make it very flexible and extensible to make your blog run anywhere.
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
