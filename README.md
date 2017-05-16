@@ -2,7 +2,7 @@
 
 > A static blog or (dynamic blog) based on Contentful
 
-![Preview of the Blog](./dosc/images/home.png "Preview of the Blog")
+![Preview of the Blog](./docs/images/home.png "Preview of the Blog")
 
 This projects can be used as a base to get you started with Contentful. It includes the following features:
 
