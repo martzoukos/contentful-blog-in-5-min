@@ -28,7 +28,7 @@ To create a new Content Management API token navigate to `APIs` in the top level
 
 *You'll need Content Management API token to write the provided data into your space.*
 
-### Create a Content Delivery API token
+### Create a Content Delivery API token and get space ID
 
 To create a new Content Management API token navigate to `APIs` in the top level menu and then to `Content Delivery / Preview tokens`.
 
