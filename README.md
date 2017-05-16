@@ -10,6 +10,7 @@ This projects can be used as a base to get you started with Contentful. It inclu
 - dynamic server side rendering
 - deploy to [now](https://zeit.co/now)
 - responsive images via [Images API](https://www.contentful.com/developers/docs/references/images-api/)
+- tags for blog posts
 
 ## Getting started
 

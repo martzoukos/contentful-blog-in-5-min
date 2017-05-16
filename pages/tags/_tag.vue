@@ -3,7 +3,7 @@
     <Navigation></Navigation>
     <div class="callout large">
       <div class="row column text-center">
-        <h1>Blog</h1>
+        <h1>#{{ tag }}</h1>
       </div>
     </div>
 
@@ -35,10 +35,12 @@ export default {
   asyncData ({ params }) {
     return client.getEntries({
       'content_type': process.env.CTF_BLOG_POST_TYPE_ID,
+      'fields.tags[in]': params.tag,
       order: '-sys.createdAt'
     }).then(entries => {
       return {
-        posts: entries.items
+        posts: entries.items,
+        tag: params.tag
       }
     })
   },

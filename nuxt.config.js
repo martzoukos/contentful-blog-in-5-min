@@ -50,13 +50,20 @@ const config = {
   ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES
   ** Get all blog posts from Contentful
   ** and generate the needed files upfront
+  **
+  ** Included:
+  ** - blog posts
+  ** - available tags
   */
   generate: {
     routes () {
       return client.getEntries({
         'content_type': ctfConfig.CTF_BLOG_POST_TYPE_ID
       }).then(entries => {
-        return entries.items.map(entry => `blog/${entry.fields.slug}`)
+        return [
+          ...entries.items.map(entry => `blog/${entry.fields.slug}`),
+          ...ctfConfig.CTF_BLOG_POST_TAGS.map(tag => `tags/${tag}`)
+        ]
       })
     }
   },

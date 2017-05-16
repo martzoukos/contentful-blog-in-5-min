@@ -52,6 +52,13 @@
         <time>{{ ( new Date(post.fields.publishDate)).toDateString() }}</time>
         <h4><nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">{{ post.fields.title }}</nuxt-link></h4>
         <p>{{ post.fields.description }}</p>
+
+        <div class="tags">
+          <nuxt-link
+            v-for="tag in post.fields.tags"
+            :key="tag"
+            :to="{ name: 'tags-tag', params: { tag: tag }}" class="tag">{{ tag }}</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
@@ -111,4 +118,25 @@ export default {
 .social-icons svg:hover {
   fill: #2199e8;
 }
+
+.tags {
+  padding : 1em 0;
+  margin-bottom: 2em;
+}
+
+.tag {
+  display: inline-block;
+  padding: .33333rem .5rem;
+  line-height: 1;
+  border-radius: 0;
+  background: #2199e8;
+  color: #fefefe;
+  margin-right: .5em;
+}
+
+.tag:hover {
+  color: #fff;
+  background: #51b9f8;
+}
+
 </style>
