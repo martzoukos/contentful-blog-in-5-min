@@ -1,8 +1,10 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <div class="row column">
-      <h1>Blog</h1>
+    <div class="callout large">
+      <div class="row column text-center">
+        <h1>Blog</h1>
+      </div>
     </div>
 
     <div class="row">
