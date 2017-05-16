@@ -1,4 +1,4 @@
-# Gettings started
+# Getting started
 
 To get you started you have to be registered at [Contentful](https://www.contentful.com).
 

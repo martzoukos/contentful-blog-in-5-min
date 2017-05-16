@@ -20,7 +20,7 @@ To really get you started from end to end please check out [the getting started 
 
 This project is based on [nuxt.js](https://nuxtjs.org/).
 
-### Why nuxt.js
+### Why nuxt.js?
 
 nuxt.js is based on [Vue.js](https://vuejs.org/). Vue is a fairly new JS framework that provides excellent documentation and is a pleasure to work with. nuxt.js sits on top of Vue and was choosen because of two main feature:
 
@@ -30,3 +30,7 @@ nuxt.js is based on [Vue.js](https://vuejs.org/). Vue is a fairly new JS framewo
 These two features make it very flexible and extensible to make your blog run anywhere.
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+### What is used for styling?
+
+To keep the work effort low (and there a million ways to write CSS) the [Foundation CSS framework is included](https://github.com/stefanjudis/contentful-blog-in-5-min/blob/master/nuxt.config.js#L17). There is no further thinking behind this decision except to make this example "kind of" pretty. :)
