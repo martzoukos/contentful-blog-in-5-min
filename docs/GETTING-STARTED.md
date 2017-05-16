@@ -16,9 +16,16 @@ To set up and use a new space you have to perform the following steps.
 
 ### Create a new space
 
+![Create new space dialog](./login.png "Create new space dialog")
+
 ### Create a Content Management API token
 
+![Dialog to create a CMA token](./cma-token.png "Dialog to create a CMA token")
+
 ### Create a Content Delivery API token
+
+![Dialog to create a CDA token](./cda-create-token.png "Dialog to create a CDA token")
+![Dialog to copy a CDA token](./cda-copy-token.png "Dialog to copy a CDA token")
 
 ## Import data in your newly created space
 
@@ -53,7 +60,9 @@ module.exports = {
 
 To see the site working with your newly created data all you have to do is to run `npm run dev`. This command starts a server at `localhost:3000`.
 
-## Deploy the site to Netlify
+## Deploy the site to `now`
+
+`now` is a fairly new service by [zeit](https://zeit.co), which also provides static hosting. If you run `npm run deploy` you're asked for your email adress (which you have to confirm) once and then your site will find its way into the cloud.
 
 ```bash
 $ npm run deploy
