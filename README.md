@@ -8,13 +8,16 @@ This projects can be used as a base to get you started with Contentful. It inclu
 
 - static site generation
 - dynamic server side rendering
-- deploy to [netlify](https://www.netlify.com/)
+- deploy to [now](https://zeit.co/now)
+- responsive images via [Images API](https://www.contentful.com/developers/docs/references/images-api/)
 
 ## Getting started
 
 To really get you started from end to end please check out [the getting started guide](./docs/GETTING-STARTED.md).
 
-## Build Setup
+## Technical stack
+
+This project is based on [nuxt.js](https://nuxtjs.org/).
 
 ``` bash
 # install dependencies

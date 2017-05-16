@@ -1,14 +1,21 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <main class="row column">
-      <div >
+    <div class="callout large">
+      <div class="row column text-center">
+        <time>{{ ( new Date(post.fields.publishDate)).toDateString() }}</time>
         <h1>{{ post.fields.title }}</h1>
-        <time>3/6/2015</time>
-        <img class="thumbnail"
-          :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
-          :srcset="`${post.fields.heroImage.fields.file.url}?w=350 350w, ${post.fields.heroImage.fields.file.url}?w=1000 1000w, ${post.fields.heroImage.fields.file.url}?w=2000 2000w`"
-        >
+      </div>
+    </div>
+    <img class="hero"
+      :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
+      :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=500&fit=fill 2000w`"
+      size="100vw"
+      :alt="post.fields.heroImage.fields.description"
+    >
+
+    <main class="row column">
+      <div>
         <vue-markdown>{{post.fields.body}}</vue-markdown>
       </div>
     </main>
@@ -40,5 +47,7 @@ export default {
 </script>
 
 <style>
-
+.hero {
+  margin: -1em 0 3em;
+}
 </style>

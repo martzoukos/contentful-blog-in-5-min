@@ -64,18 +64,4 @@ const config = {
   env: ctfConfig
 }
 
-/*
-** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES
-**
-** ATTENTION
-**
-** remove these lines when you're running on gh-pages
-** with your own custom domain
-*/
-// if (process.env.npm_lifecycle_event === 'deploy:gh-pages') {
-//   config.router = {
-//     base: `/${require('./package').name}`
-//   }
-// }
-
 module.exports = config
