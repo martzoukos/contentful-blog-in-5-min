@@ -16,16 +16,16 @@ To set up and use a new space you have to perform the following steps.
 
 ### Create a new space
 
-![Create new space dialog](./login.png "Create new space dialog")
+![Create new space dialog](./images/login.png "Create new space dialog")
 
 ### Create a Content Management API token
 
-![Dialog to create a CMA token](./cma-token.png "Dialog to create a CMA token")
+![Dialog to create a CMA token](./images/cma-token.png "Dialog to create a CMA token")
 
 ### Create a Content Delivery API token
 
-![Dialog to create a CDA token](./cda-create-token.png "Dialog to create a CDA token")
-![Dialog to copy a CDA token](./cda-copy-token.png "Dialog to copy a CDA token")
+![Dialog to create a CDA token](./images/cda-create-token.png "Dialog to create a CDA token")
+![Dialog to copy a CDA token](./images/cda-copy-token.png "Dialog to copy a CDA token")
 
 ## Import data in your newly created space
 
