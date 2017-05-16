@@ -12,7 +12,7 @@
                 "id": "person",
                 "type": "ContentType",
                 "createdAt": "2017-05-11T12:04:23.540Z",
-                "updatedAt": "2017-05-11T12:05:49.434Z",
+                "updatedAt": "2017-05-16T09:30:30.813Z",
                 "createdBy": {
                     "sys": {
                         "type": "Link",
@@ -27,8 +27,8 @@
                         "id": "066RqBikAjzKy0SWUEtFvH"
                     }
                 },
-                "publishedCounter": 4,
-                "version": 8,
+                "publishedCounter": 5,
+                "version": 10,
                 "publishedBy": {
                     "sys": {
                         "type": "Link",
@@ -36,9 +36,9 @@
                         "id": "066RqBikAjzKy0SWUEtFvH"
                     }
                 },
-                "publishedVersion": 7,
+                "publishedVersion": 9,
                 "firstPublishedAt": "2017-05-11T12:04:23.869Z",
-                "publishedAt": "2017-05-11T12:05:49.398Z"
+                "publishedAt": "2017-05-16T09:30:30.790Z"
             },
             "displayField": "name",
             "name": "Person",
@@ -57,6 +57,16 @@
                 {
                     "id": "title",
                     "name": "Title",
+                    "type": "Symbol",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "id": "slogan",
+                    "name": "Slogan",
                     "type": "Symbol",
                     "localized": false,
                     "required": true,
@@ -284,6 +294,10 @@
                     "widgetId": "singleLine"
                 },
                 {
+                    "fieldId": "slogan",
+                    "widgetId": "singleLine"
+                },
+                {
                     "fieldId": "company",
                     "widgetId": "singleLine"
                 },
@@ -319,7 +333,7 @@
             "sys": {
                 "id": "default",
                 "type": "EditorInterface",
-                "version": 8,
+                "version": 10,
                 "createdAt": "2017-05-11T12:04:24.145Z",
                 "createdBy": {
                     "sys": {
@@ -342,7 +356,7 @@
                         "id": "person"
                     }
                 },
-                "updatedAt": "2017-05-11T12:05:50.625Z",
+                "updatedAt": "2017-05-16T09:30:33.029Z",
                 "updatedBy": {
                     "sys": {
                         "type": "Link",
@@ -437,7 +451,7 @@
                 "id": "15jwOBqpxqSAOy2eOO4S0m",
                 "type": "Entry",
                 "createdAt": "2017-05-11T12:04:29.532Z",
-                "updatedAt": "2017-05-15T11:50:00.201Z",
+                "updatedAt": "2017-05-16T09:30:45.805Z",
                 "createdBy": {
                     "sys": {
                         "type": "Link",
@@ -452,8 +466,8 @@
                         "id": "066RqBikAjzKy0SWUEtFvH"
                     }
                 },
-                "publishedCounter": 7,
-                "version": 106,
+                "publishedCounter": 10,
+                "version": 158,
                 "publishedBy": {
                     "sys": {
                         "type": "Link",
@@ -461,9 +475,9 @@
                         "id": "066RqBikAjzKy0SWUEtFvH"
                     }
                 },
-                "publishedVersion": 105,
+                "publishedVersion": 157,
                 "firstPublishedAt": "2017-05-11T12:06:33.065Z",
-                "publishedAt": "2017-05-15T11:50:00.167Z",
+                "publishedAt": "2017-05-16T09:30:45.775Z",
                 "contentType": {
                     "sys": {
                         "type": "Link",
@@ -474,22 +488,25 @@
             },
             "fields": {
                 "name": {
-                    "en-US": "Stefan Judis"
+                    "en-US": "John Doe"
                 },
                 "title": {
-                    "en-US": "Developer Evangelist"
+                    "en-US": "Web Developer"
+                },
+                "slogan": {
+                    "en-US": "I'm in love with the web"
                 },
                 "company": {
-                    "en-US": "Contentful"
+                    "en-US": "John Doe's Development"
                 },
                 "shortBio": {
-                    "en-US": "Stefan started programming 6 years ago and quickly fell in love with web performance, new technologies and automation. \n\nHe worked for several startups in Berlin and recently joined Contentful to tell the world how an API-first CMS can make you a bit happier. \n\nHe is also a curator of the web performance online resource Perf Tooling (perf-tooling.today), organizer of the Web Performance Meetup Berlin, contributes to a variety of open source projects and enjoys sharing nerdy discoveries.\n"
+                    "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
                 },
                 "email": {
-                    "en-US": "stefan.judis@contentful.com"
+                    "en-US": "john@doe.com"
                 },
                 "phone": {
-                    "en-US": "0176 / 12345678"
+                    "en-US": "0176 / 1234567"
                 },
                 "twitter": {
                     "en-US": "https://twitter.com/stefanjudis"
@@ -771,7 +788,7 @@
                 "id": "7orLdboQQowIUs22KAW4U",
                 "type": "Asset",
                 "createdAt": "2017-05-11T13:04:42.667Z",
-                "updatedAt": "2017-05-11T13:14:58.086Z",
+                "updatedAt": "2017-05-16T09:29:04.154Z",
                 "createdBy": {
                     "sys": {
                         "type": "Link",
@@ -786,8 +803,8 @@
                         "id": "066RqBikAjzKy0SWUEtFvH"
                     }
                 },
-                "publishedCounter": 2,
-                "version": 40,
+                "publishedCounter": 3,
+                "version": 56,
                 "publishedBy": {
                     "sys": {
                         "type": "Link",
@@ -795,28 +812,28 @@
                         "id": "066RqBikAjzKy0SWUEtFvH"
                     }
                 },
-                "publishedVersion": 39,
+                "publishedVersion": 55,
                 "firstPublishedAt": "2017-05-11T13:05:17.053Z",
-                "publishedAt": "2017-05-11T13:14:58.077Z"
+                "publishedAt": "2017-05-16T09:29:04.140Z"
             },
             "fields": {
                 "title": {
-                    "en-US": "Girl"
+                    "en-US": "Sparkler"
                 },
                 "description": {
-                    "en-US": "Girl in the sun"
+                    "en-US": "John with Sparkler"
                 },
                 "file": {
                     "en-US": {
-                        "url": "//images.contentful.com/28p9vvm1oxuw/7orLdboQQowIUs22KAW4U/804f3f5c4965e99f58f44f7d5bc4b886/girl.jpg",
+                        "url": "//images.contentful.com/28p9vvm1oxuw/7orLdboQQowIUs22KAW4U/a97cd3b3415b51c5facfa6f4d184b650/matt-palmer-254999.jpg",
                         "details": {
-                            "size": 8683471,
+                            "size": 2293094,
                             "image": {
-                                "width": 3148,
-                                "height": 3641
+                                "width": 3000,
+                                "height": 2000
                             }
                         },
-                        "fileName": "girl.jpg",
+                        "fileName": "matt-palmer-254999.jpg",
                         "contentType": "image/jpeg"
                     }
                 }
