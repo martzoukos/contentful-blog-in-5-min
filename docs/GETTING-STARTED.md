@@ -59,8 +59,12 @@ Needed config data:
 
 ```javascript
 module.exports = {
-  CTF_PERSON_ID: '15jwOBqpxqSAOy2eOO4S0m', // no need to be changed - was set in your import
-  CTF_BLOG_POST_TYPE_ID: 'blogPost',       // no need to be changed - was set in your import
+  // doesn't need to be changes - was set in your import
+  CTF_PERSON_ID: '15jwOBqpxqSAOy2eOO4S0m',
+  CTF_BLOG_POST_TYPE_ID: 'blogPost',
+  CTF_BLOG_POST_TAGS: ['javascript', 'general', 'static sites'],
+
+  // these values have to be defined by you
   CTF_SPACE_ID: 'YOUR_SPACE_ID',
   CTF_ACCESS_TOKEN: 'YOUR_DELIVERY_ACCESS_TOKEN'
 };
