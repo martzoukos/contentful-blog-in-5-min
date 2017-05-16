@@ -12,20 +12,30 @@ $ npm install
 
 ## Get needed config data from Contentful
 
-To set up and use a new space you have to perform the following steps.
+To set up and use a new space you have to create and retrieve the needed access tokens. So let's jump right into it...
 
 ### Create a new space
+
+You can create a new space by pressing in the space overview in the top left corner of the web app.
 
 ![Create new space dialog](./images/login.png "Create new space dialog")
 
 ### Create a Content Management API token
 
+To create a new Content Management API token navigate to `APIs` in the top level menu and then to `Content Managements Tokens`.
+
 ![Dialog to create a CMA token](./images/cma-token.png "Dialog to create a CMA token")
+
+*You'll need Content Management API token to write the provided data into your space.*
 
 ### Create a Content Delivery API token
 
+To create a new Content Management API token navigate to `APIs` in the top level menu and then to `Content Delivery / Preview tokens`.
+
 ![Dialog to create a CDA token](./images/cda-create-token.png "Dialog to create a CDA token")
 ![Dialog to copy a CDA token](./images/cda-copy-token.png "Dialog to copy a CDA token")
+
+*You'll need the Content Delivery API token to access the data stored in your space.*
 
 ## Import data in your newly created space
 
@@ -41,11 +51,11 @@ $ npm run import-data -- --space-id YOUR_SPACE_ID --management-token YOUR_MANAGE
 
 ## Create a config file
 
-Now that you have the Contentful setup done it's time set the configuration to run the project. To make this project run locally you have to create a `.contentful.js` in the root of the directory. You can find a `.contentful.sample` file which shows you what you have to define.
+Now that you have the Contentful setup done, it's time to define the configuration to run the project. To make this project work locally you have to rename the `.contentful.sample` in the root of the directory to `.contentful.js`. You have to set two values:
 
 Needed config data:
-- the ID of the space where your data lives
-- the CDA access token so that you can fetch the data
+- the ID of the space where your data lives - `CTF_SPACE_ID`
+- the Content Delivery API token so that you can fetch the data - `CTF_ACCESS_TOKEN`
 
 ```javascript
 module.exports = {
@@ -67,4 +77,3 @@ To see the site working with your newly created data all you have to do is to ru
 ```bash
 $ npm run deploy
 ```
-
